@@ -2,10 +2,10 @@
   "version": 8,
   "name": "KlokanTech Basic",
   "center": [
-    8.560229087061686,
-    47.3703952113523
+    8.538627050897787,
+    47.368933734833064
   ],
-  "zoom": 13.092513778535489,
+  "zoom": 13.63318502137067,
   "bearing": 0,
   "pitch": 0,
   "sources": {
@@ -14,13 +14,12 @@
       "type": "vector"
     }
   },
-  "sprite": "mapbox://sprites/morgenkaffee/ciuh1zaak00mj2is1q4otu7by/draft",
+  "sprite": "mapbox://sprites/morgenkaffee/ciuxuterf01a52iqqo6kolwk1",
   "glyphs": "mapbox://fonts/morgenkaffee/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
       "type": "background",
-      "interactive": true,
       "paint": {
         "background-color": "hsl(47, 26%, 88%)"
       }
@@ -30,7 +29,6 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "landuse",
-      "interactive": true,
       "filter": [
         "all",
         [
@@ -57,7 +55,6 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "water",
-      "interactive": true,
       "filter": [
         "==",
         "$type",
@@ -72,7 +69,6 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "landcover",
-      "interactive": true,
       "filter": [
         "==",
         "subclass",
@@ -91,7 +87,6 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "landcover",
-      "interactive": true,
       "filter": [
         "==",
         "subclass",
@@ -122,7 +117,6 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "landuse",
-      "interactive": true,
       "filter": [
         "==",
         "class",
@@ -140,7 +134,6 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "landcover",
-      "interactive": true,
       "filter": [
         "==",
         "class",
@@ -168,7 +161,6 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "landuse",
-      "interactive": true,
       "filter": [
         "==",
         "class",
@@ -184,7 +176,6 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "landcover",
-      "interactive": true,
       "filter": [
         "==",
         "class",
@@ -212,7 +203,6 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "water",
-      "interactive": true,
       "filter": [
         "==",
         "$type",
@@ -240,7 +230,6 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "building",
-      "interactive": true,
       "paint": {
         "fill-color": "hsl(39, 41%, 86%)",
         "fill-outline-color": "hsl(36, 45%, 80%)",
@@ -265,7 +254,6 @@
       "source": "openmaptiles",
       "source-layer": "housenumber",
       "minzoom": 17,
-      "interactive": true,
       "filter": [
         "==",
         "$type",
@@ -282,11 +270,11 @@
       }
     },
     {
-      "id": "road_minor",
+      "id": "highway_path",
       "type": "line",
+      "metadata": {},
       "source": "openmaptiles",
-      "source-layer": "highway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "all",
         [
@@ -297,7 +285,47 @@
         [
           "==",
           "class",
-          "minor_road"
+          "path"
+        ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "hsl(0, 0%, 97%)",
+        "line-width": {
+          "base": 1.55,
+          "stops": [
+            [
+              4,
+              0.25
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway_minor",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "class",
+          "minor",
+          "service"
         ]
       ],
       "layout": {
@@ -325,8 +353,7 @@
       "id": "tunnel_minor",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "highway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "all",
         [
@@ -338,14 +365,13 @@
           "all",
           [
             "==",
-            "class",
-            "minor_road"
+            "brunnel",
+            "tunnel"
           ],
           [
-            "in",
-            "properties",
-            "tunnel",
-            "tunnel:oneway"
+            "==",
+            "class",
+            "minor_road"
           ]
         ]
       ],
@@ -378,8 +404,7 @@
       "id": "tunnel_major",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "highway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "all",
         [
@@ -390,18 +415,17 @@
         [
           "all",
           [
+            "==",
+            "brunnel",
+            "tunnel"
+          ],
+          [
             "in",
             "class",
             "primary",
             "secondary",
             "tertiary",
             "trunk"
-          ],
-          [
-            "in",
-            "properties",
-            "tunnel",
-            "tunnel:oneway"
           ]
         ]
       ],
@@ -434,8 +458,7 @@
       "id": "road_major",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "highway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "all",
         [
@@ -474,8 +497,7 @@
       "id": "road_major_motorway",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "highway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "all",
         [
@@ -512,11 +534,10 @@
       }
     },
     {
-      "id": "road_rail",
+      "id": "railway",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "railway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "==",
         "class",
@@ -546,8 +567,7 @@
       "id": "bridge_minor case",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "highway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "all",
         [
@@ -559,14 +579,13 @@
           "all",
           [
             "==",
-            "class",
-            "minor_road"
+            "brunnel",
+            "bridge"
           ],
           [
-            "in",
-            "properties",
-            "bridge",
-            "bridge:oneway"
+            "==",
+            "class",
+            "minor_road"
           ]
         ]
       ],
@@ -608,8 +627,7 @@
       "id": "bridge_major case",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "highway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "all",
         [
@@ -620,18 +638,17 @@
         [
           "all",
           [
+            "==",
+            "brunnel",
+            "bridge"
+          ],
+          [
             "in",
             "class",
             "primary",
             "secondary",
             "tertiary",
             "trunk"
-          ],
-          [
-            "in",
-            "properties",
-            "bridge",
-            "bridge:oneway"
           ]
         ]
       ],
@@ -673,8 +690,7 @@
       "id": "bridge_minor",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "highway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "all",
         [
@@ -686,14 +702,13 @@
           "all",
           [
             "==",
-            "class",
-            "minor_road"
+            "brunnel",
+            "bridge"
           ],
           [
-            "in",
-            "properties",
-            "bridge",
-            "bridge:oneway"
+            "==",
+            "class",
+            "minor_road"
           ]
         ]
       ],
@@ -722,8 +737,7 @@
       "id": "bridge_major",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "highway",
-      "interactive": true,
+      "source-layer": "transportation",
       "filter": [
         "all",
         [
@@ -734,18 +748,17 @@
         [
           "all",
           [
+            "==",
+            "brunnel",
+            "bridge"
+          ],
+          [
             "in",
             "class",
             "primary",
             "secondary",
             "tertiary",
             "trunk"
-          ],
-          [
-            "in",
-            "properties",
-            "bridge",
-            "bridge:oneway"
           ]
         ]
       ],
@@ -775,7 +788,6 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "boundary",
-      "interactive": true,
       "filter": [
         "in",
         "admin_level",
@@ -799,7 +811,6 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "boundary",
-      "interactive": true,
       "filter": [
         "all",
         [
@@ -840,7 +851,6 @@
       "source": "openmaptiles",
       "source-layer": "poi_label",
       "minzoom": 5,
-      "interactive": true,
       "filter": [
         "all",
         [
@@ -888,23 +898,11 @@
       "id": "road_major_label",
       "type": "symbol",
       "source": "openmaptiles",
-      "source-layer": "highway_name",
-      "interactive": true,
+      "source-layer": "transportation_name",
       "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "in",
-          "class",
-          "primary",
-          "secondary",
-          "tertiary",
-          "trunk"
-        ]
+        "==",
+        "$type",
+        "LineString"
       ],
       "layout": {
         "symbol-placement": "line",
@@ -941,20 +939,26 @@
       "source": "openmaptiles",
       "source-layer": "place",
       "minzoom": 8,
-      "interactive": true,
       "filter": [
         "all",
-        [
-          "!in",
-          "class",
-          "city",
-          "country",
-          "state"
-        ],
         [
           "==",
           "$type",
           "Point"
+        ],
+        [
+          "all",
+          [
+            "!=",
+            "subclass",
+            "city"
+          ],
+          [
+            "in",
+            "class",
+            "settlement",
+            "subregion"
+          ]
         ]
       ],
       "layout": {
@@ -991,7 +995,6 @@
       "source": "openmaptiles",
       "source-layer": "place",
       "maxzoom": 16,
-      "interactive": true,
       "filter": [
         "all",
         [
@@ -1001,7 +1004,7 @@
         ],
         [
           "==",
-          "class",
+          "subclass",
           "city"
         ]
       ],
@@ -1037,7 +1040,6 @@
       "source": "openmaptiles",
       "source-layer": "place",
       "maxzoom": 12,
-      "interactive": true,
       "filter": [
         "all",
         [
@@ -1079,4 +1081,3 @@
     }
   ]
 }
-
