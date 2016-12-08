@@ -3,7 +3,8 @@
   "name": "Klokantech Basic",
   "metadata": {
     "mapbox:autocomposite": true,
-    "mapbox:type": "template"
+    "mapbox:type": "template",
+    "openmaptiles:version": "3.x"
   },
   "center": [
     8.54806714892635,
