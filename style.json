@@ -1,21 +1,25 @@
 {
   "version": 8,
-  "name": "KlokanTech Basic",
+  "name": "Klokantech Basic",
+  "metadata": {
+    "mapbox:autocomposite": true,
+    "mapbox:type": "template"
+  },
   "center": [
-    8.538627050897787,
-    47.368933734833064
+    8.54806714892635,
+    47.37180823552663
   ],
-  "zoom": 13.63318502137067,
+  "zoom": 12.241790506353492,
   "bearing": 0,
   "pitch": 0,
   "sources": {
     "openmaptiles": {
-      "url": "mapbox://morgenkaffee.8to5aq6q",
+      "url": "mapbox://openmaptiles.805mi4we",
       "type": "vector"
     }
   },
-  "sprite": "mapbox://sprites/morgenkaffee/ciuxuterf01a52iqqo6kolwk1",
-  "glyphs": "mapbox://fonts/morgenkaffee/{fontstack}/{range}.pbf",
+  "sprite": "mapbox://sprites/openmaptiles/ciwf4zbsv007y2pmt2rspc1dc",
+  "glyphs": "mapbox://fonts/openmaptiles/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -272,7 +276,6 @@
     {
       "id": "highway_path",
       "type": "line",
-      "metadata": {},
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": [
@@ -1079,5 +1082,10 @@
         "text-halo-blur": 0
       }
     }
-  ]
+  ],
+  "created": "2016-12-07T16:15:47.845Z",
+  "id": "ciwf4zbsv007y2pmt2rspc1dc",
+  "modified": "2016-12-08T11:20:00.480Z",
+  "owner": "openmaptiles",
+  "draft": false
 }
