@@ -266,7 +266,12 @@
       ],
       "layout": {
         "text-field": "{housenumber}",
-        "text-size": 10
+        "text-size": 10,
+        "text-font": [
+          "Open Sans Regular",
+          "Klokantech Noto Sans Regular",
+          "Klokantech Noto Sans CJK Regular"
+        ]
       },
       "paint": {
         "text-color": "hsla(0, 14%, 57%, 0.51)",
@@ -879,7 +884,9 @@
       "layout": {
         "text-size": 11,
         "text-font": [
-          "Open Sans Regular"
+          "Open Sans Regular",
+          "Klokantech Noto Sans Regular",
+          "Klokantech Noto Sans CJK Regular"
         ],
         "visibility": "none",
         "text-offset": [
@@ -912,7 +919,9 @@
         "symbol-placement": "line",
         "text-field": "{name}",
         "text-font": [
-          "Open Sans Regular"
+          "Open Sans Regular",
+          "Klokantech Noto Sans Regular",
+          "Klokantech Noto Sans CJK Regular"
         ],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.1,
@@ -968,7 +977,9 @@
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "Open Sans Regular"
+          "Open Sans Regular",
+          "Klokantech Noto Sans Regular",
+          "Klokantech Noto Sans CJK Regular"
         ],
         "text-max-width": 6,
         "text-size": {
@@ -1015,7 +1026,9 @@
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "Open Sans Regular"
+          "Open Sans Regular",
+          "Klokantech Noto Sans Regular",
+          "Klokantech Noto Sans CJK Regular"
         ],
         "text-max-width": 10,
         "text-size": {
@@ -1060,7 +1073,9 @@
       "layout": {
         "text-field": "{name}",
         "text-font": [
-          "Open Sans Bold"
+          "Open Sans Bold",
+          "Klokantech Noto Sans Bold",
+          "Klokantech Noto Sans CJK Bold"
         ],
         "text-max-width": 10,
         "text-size": {
@@ -1086,7 +1101,7 @@
   ],
   "created": "2016-12-07T16:15:47.845Z",
   "id": "ciwf4zbsv007y2pmt2rspc1dc",
-  "modified": "2016-12-08T11:20:00.480Z",
+  "modified": "2016-12-13T10:36:42.060Z",
   "owner": "openmaptiles",
   "draft": false
 }
