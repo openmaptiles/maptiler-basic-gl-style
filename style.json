@@ -15,7 +15,7 @@
   "pitch": 0,
   "sources": {
     "openmaptiles": {
-      "url": "mapbox://openmaptiles.805mi4we",
+      "url": "mapbox://openmaptiles.4qljc88t",
       "type": "vector"
     }
   },
@@ -963,14 +963,8 @@
           "all",
           [
             "!=",
-            "subclass",
-            "city"
-          ],
-          [
-            "in",
             "class",
-            "settlement",
-            "subregion"
+            "city"
           ]
         ]
       ],
@@ -1019,7 +1013,7 @@
         ],
         [
           "==",
-          "subclass",
+          "class",
           "city"
         ]
       ],
