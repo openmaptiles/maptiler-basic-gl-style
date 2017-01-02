@@ -858,7 +858,7 @@
       "id": "poi_label",
       "type": "symbol",
       "source": "openmaptiles",
-      "source-layer": "poi_label",
+      "source-layer": "poi",
       "minzoom": 5,
       "filter": [
         "all",
@@ -868,17 +868,9 @@
           "Point"
         ],
         [
-          "all",
-          [
-            "==",
-            "localrank",
-            1
-          ],
-          [
-            "==",
-            "scalerank",
-            1
-          ]
+          "==",
+          "rank",
+          1
         ]
       ],
       "layout": {
@@ -888,7 +880,7 @@
           "Klokantech Noto Sans Regular",
           "Klokantech Noto Sans CJK Regular"
         ],
-        "visibility": "none",
+        "visibility": "visible",
         "text-offset": [
           0,
           0.5
