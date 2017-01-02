@@ -2,7 +2,7 @@
   "version": 8,
   "name": "Klokantech Basic",
   "metadata": {
-    "mapbox:autocomposite": true,
+    "mapbox:autocomposite": false,
     "mapbox:type": "template",
     "openmaptiles:version": "3.x"
   },
