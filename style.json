@@ -320,11 +320,15 @@
         ]
       ],
       "layout": {
-        "line-cap": "round",
-        "line-join": "round"
+        "line-cap": "square",
+        "line-join": "bevel"
       },
       "paint": {
         "line-color": "hsl(0, 0%, 97%)",
+        "line-dasharray": [
+          1,
+          1
+        ],
         "line-width": {
           "base": 1.55,
           "stops": [
@@ -334,7 +338,7 @@
             ],
             [
               20,
-              15
+              10
             ]
           ]
         }
@@ -356,8 +360,7 @@
           "in",
           "class",
           "minor",
-          "service",
-          "path"
+          "service"
         ]
       ],
       "layout": {
@@ -487,7 +490,7 @@
       }
     },
     {
-      "id": "road_major",
+      "id": "road_trunk_primary",
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -502,7 +505,45 @@
           "in",
           "class",
           "trunk",
-          "primary",
+          "primary"
+        ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#fff",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              6,
+              0.5
+            ],
+            [
+              20,
+              30
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "road_secondary_tertiary",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "class",
           "secondary",
           "tertiary"
         ]
@@ -522,7 +563,7 @@
             ],
             [
               20,
-              30
+              20
             ]
           ]
         }
