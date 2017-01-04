@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Klokantech Basic",
+  "name": "KlokanTech Basic",
   "metadata": {
     "mapbox:autocomposite": false,
     "mapbox:type": "template",
@@ -15,12 +15,11 @@
   "pitch": 0,
   "sources": {
     "openmaptiles": {
-      "url": "mapbox://openmaptiles.4qljc88t",
+      "url": "https://free.tilehosting.com/data/v3.json?key=tXiQqN3lIgskyDErJCeY",
       "type": "vector"
     }
   },
-  "sprite": "mapbox://sprites/openmaptiles/ciwf4zbsv007y2pmt2rspc1dc",
-  "glyphs": "mapbox://fonts/openmaptiles/{fontstack}/{range}.pbf",
+  "glyphs": "https://klokantech.tilehosting.com/fonts/{fontstack}/{range}.pbf?key=25ItXg7aI5wurYDtttD",
   "layers": [
     {
       "id": "background",
@@ -268,9 +267,8 @@
         "text-field": "{housenumber}",
         "text-size": 10,
         "text-font": [
-          "Open Sans Regular",
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "KlokanTech Noto Sans Regular",
+          "KlokanTech Noto Sans CJK Regular"
         ]
       },
       "paint": {
@@ -876,9 +874,8 @@
       "layout": {
         "text-size": 11,
         "text-font": [
-          "Open Sans Regular",
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "KlokanTech Noto Sans Regular",
+          "KlokanTech Noto Sans CJK Regular"
         ],
         "visibility": "visible",
         "text-offset": [
@@ -911,9 +908,8 @@
         "symbol-placement": "line",
         "text-field": "{name}",
         "text-font": [
-          "Open Sans Regular",
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "KlokanTech Noto Sans Regular",
+          "KlokanTech Noto Sans CJK Regular"
         ],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.1,
@@ -963,9 +959,8 @@
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "Open Sans Regular",
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "KlokanTech Noto Sans Regular",
+          "KlokanTech Noto Sans CJK Regular"
         ],
         "text-max-width": 6,
         "text-size": {
@@ -1012,9 +1007,8 @@
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "Open Sans Regular",
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "KlokanTech Noto Sans Regular",
+          "KlokanTech Noto Sans CJK Regular"
         ],
         "text-max-width": 10,
         "text-size": {
@@ -1059,9 +1053,8 @@
       "layout": {
         "text-field": "{name}",
         "text-font": [
-          "Open Sans Bold",
-          "Klokantech Noto Sans Bold",
-          "Klokantech Noto Sans CJK Bold"
+          "KlokanTech Noto Sans Bold",
+          "KlokanTech Noto Sans CJK Bold"
         ],
         "text-max-width": 10,
         "text-size": {
@@ -1087,7 +1080,7 @@
   ],
   "created": "2016-12-07T16:15:47.845Z",
   "id": "ciwf4zbsv007y2pmt2rspc1dc",
-  "modified": "2016-12-13T10:36:42.060Z",
+  "modified": "2017-01-04T10:07:41.170Z",
   "owner": "openmaptiles",
   "draft": false
 }
