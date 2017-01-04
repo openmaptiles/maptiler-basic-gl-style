@@ -161,14 +161,24 @@
       }
     },
     {
-      "id": "landuse_park",
+      "id": "park",
       "type": "fill",
       "source": "openmaptiles",
-      "source-layer": "landuse",
+      "source-layer": "park",
+      "paint": {
+        "fill-color": "hsl(82, 46%, 72%)",
+        "fill-opacity": 0.45
+      }
+    },
+    {
+      "id": "landcover_grass",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "landcover",
       "filter": [
         "==",
         "class",
-        "park"
+        "grass"
       ],
       "paint": {
         "fill-color": "hsl(82, 46%, 72%)",
