@@ -231,7 +231,7 @@
       "id": "waterway",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "water",
+      "source-layer": "waterway",
       "filter": [
         "==",
         "$type",
