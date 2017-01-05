@@ -317,9 +317,10 @@
           "LineString"
         ],
         [
-          "==",
+          "in",
           "class",
-          "path"
+          "path",
+          "track"
         ]
       ],
       "layout": {
