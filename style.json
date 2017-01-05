@@ -240,20 +240,21 @@
         "LineString"
       ],
       "paint": {
-        "line-color": "#a0cfdf",
+        "line-color": "hsl(205, 56%, 73%)",
         "line-width": {
           "base": 1.4,
           "stops": [
             [
               8,
-              0.5
+              1
             ],
             [
               20,
-              15
+              8
             ]
           ]
-        }
+        },
+        "line-opacity": 1
       }
     },
     {
