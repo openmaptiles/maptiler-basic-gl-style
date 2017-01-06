@@ -6,15 +6,15 @@ schema of [OpenMapTiles](https://github.com/openmaptiles/openmaptiles).
 
 ## Preview
 
-**[:globe_with_meridians: Browse the map](https://openmaptiles.github.io/klokantech-basic-gl-style/)**
+**[:globe_with_meridians: Browse the map](https://openmaptiles.github.io/klokantech-basic-gl-style)**
 
-![Klokantech Basic Preview Zurich](https://api.mapbox.com/styles/v1/morgenkaffee/ciuxuterf01a52iqqo6kolwk1/static/8.540587,47.370555,14.08,0.00,0.00/600x400?access_token=pk.eyJ1IjoibW9yZ2Vua2FmZmVlIiwiYSI6IjIzcmN0NlkifQ.0LRTNgCc-envt9d5MzR75w)
+<img src="http://demo.tileserver.org/styles/klokantech-basic/static/8.540587,47.370555,15.08/600x400@2x.png" width="600" title="Klokantech Basic Preview Zurich">
 
-![Klokantech Basic Preview Lake Zurich](https://api.mapbox.com/styles/v1/morgenkaffee/ciuxuterf01a52iqqo6kolwk1/static/8.619184,47.336203,9.07,0.00,0.00/600x400?access_token=pk.eyJ1IjoibW9yZ2Vua2FmZmVlIiwiYSI6IjIzcmN0NlkifQ.0LRTNgCc-envt9d5MzR75w)
+<img src="http://demo.tileserver.org/styles/klokantech-basic/static/8.619184,47.336203,10.07/600x400@2x.png" width="600" title="Klokantech Basic Preview Lake Zurich">
 
-![Klokantech Basic Preview Switzerland](https://api.mapbox.com/styles/v1/morgenkaffee/ciuxuterf01a52iqqo6kolwk1/static/8.243967,46.916315,6.21,0.00,0.00/600x400?access_token=pk.eyJ1IjoibW9yZ2Vua2FmZmVlIiwiYSI6IjIzcmN0NlkifQ.0LRTNgCc-envt9d5MzR75w)
+<img src="http://demo.tileserver.org/styles/klokantech-basic/static/8.243967,46.916315,7.21/600x400@2x.png" width="600" title="Klokantech Basic Preview Switzerland">
 
-![Klokantech Basic Preview Europe](https://api.mapbox.com/styles/v1/morgenkaffee/ciuxuterf01a52iqqo6kolwk1/static/10.987258,46.453150,3.02,0.00,0.00/600x400?access_token=pk.eyJ1IjoibW9yZ2Vua2FmZmVlIiwiYSI6IjIzcmN0NlkifQ.0LRTNgCc-envt9d5MzR75w)
+<img src="http://demo.tileserver.org/styles/klokantech-basic/static/10.987258,46.453150,4.02/600x400@2x.png" width="600" title="Klokantech Basic Preview Europe">
 
 ## Edit the Style
 
