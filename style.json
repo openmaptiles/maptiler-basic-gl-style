@@ -220,14 +220,14 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "park",
+      "layout": {},
       "paint": {
         "line-color": "rgba(159, 183, 118, 0.69)",
         "line-dasharray": [
           0.5,
           1
         ]
-      },
-      "layout": {}
+      }
     },
     {
       "id": "waterway",
