@@ -18,7 +18,7 @@ schema of [OpenMapTiles](https://github.com/openmaptiles/openmaptiles).
 
 ## Edit the Style
 
-Use the [Maputnik CLI](https://github.com/maputnik/editor) to edit and develop the style.
+Use the [Maputnik CLI](http://openmaptiles.org/docs/style/maputnik/) to edit and develop the style.
 After you've started Maputnik open the editor on `localhost:8000`.
 
 ```
