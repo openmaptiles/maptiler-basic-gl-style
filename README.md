@@ -27,4 +27,6 @@ maputnik --watch --file style.json
 
 ## License
 
-- [ ] Clarify license
+All code in this repository is under the [BSD license](./LICENSE.md), the design is [CC-BY](./LICENSE.md).
+
+Products or services using maps derived from OpenMapTiles schema need to visibly credit "OpenMapTiles.org" or reference "OpenMapTiles" with a link to http://openmaptiles.org/. Exceptions to attribution requirement can be granted on request.
