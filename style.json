@@ -402,17 +402,14 @@
           "LineString"
         ],
         [
-          "all",
-          [
-            "==",
-            "brunnel",
-            "tunnel"
-          ],
-          [
-            "==",
-            "class",
-            "minor_road"
-          ]
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "==",
+          "class",
+          "minor_road"
         ]
       ],
       "layout": {
@@ -453,20 +450,17 @@
           "LineString"
         ],
         [
-          "all",
-          [
-            "==",
-            "brunnel",
-            "tunnel"
-          ],
-          [
-            "in",
-            "class",
-            "primary",
-            "secondary",
-            "tertiary",
-            "trunk"
-          ]
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "primary",
+          "secondary",
+          "tertiary",
+          "trunk"
         ]
       ],
       "layout": {
@@ -657,17 +651,14 @@
           "LineString"
         ],
         [
-          "all",
-          [
-            "==",
-            "brunnel",
-            "bridge"
-          ],
-          [
-            "==",
-            "class",
-            "minor_road"
-          ]
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "==",
+          "class",
+          "minor_road"
         ]
       ],
       "layout": {
@@ -717,20 +708,17 @@
           "LineString"
         ],
         [
-          "all",
-          [
-            "==",
-            "brunnel",
-            "bridge"
-          ],
-          [
-            "in",
-            "class",
-            "primary",
-            "secondary",
-            "tertiary",
-            "trunk"
-          ]
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "primary",
+          "secondary",
+          "tertiary",
+          "trunk"
         ]
       ],
       "layout": {
@@ -780,17 +768,14 @@
           "LineString"
         ],
         [
-          "all",
-          [
-            "==",
-            "brunnel",
-            "bridge"
-          ],
-          [
-            "==",
-            "class",
-            "minor_road"
-          ]
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "==",
+          "class",
+          "minor_road"
         ]
       ],
       "layout": {
@@ -827,20 +812,17 @@
           "LineString"
         ],
         [
-          "all",
-          [
-            "==",
-            "brunnel",
-            "bridge"
-          ],
-          [
-            "in",
-            "class",
-            "primary",
-            "secondary",
-            "tertiary",
-            "trunk"
-          ]
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "primary",
+          "secondary",
+          "tertiary",
+          "trunk"
         ]
       ],
       "layout": {
@@ -1022,12 +1004,9 @@
           "Point"
         ],
         [
-          "all",
-          [
-            "!=",
-            "class",
-            "city"
-          ]
+          "!=",
+          "class",
+          "city"
         ]
       ],
       "layout": {
