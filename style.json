@@ -22,7 +22,7 @@
       "url": "https://free.tilehosting.com/data/v3.json?key=tXiQqN3lIgskyDErJCeY"
     }
   },
-  "glyphs": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key=tXiQqN3lIgskyDErJCeY",
   "layers": [
     {
       "id": "background",
