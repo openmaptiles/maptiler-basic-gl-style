@@ -263,21 +263,33 @@
       "source": "openmaptiles",
       "source-layer": "building",
       "paint": {
-        "fill-color": "hsl(39, 41%, 86%)",
-        "fill-outline-color": "hsl(36, 45%, 80%)",
+        "fill-color": "rgba(222, 211, 190, 1)",
+        "fill-outline-color": {
+          "stops": [
+            [
+              15,
+              "rgba(212, 177, 146, 0)"
+            ],
+            [
+              16,
+              "rgba(212, 177, 146, 0.5)"
+            ]
+          ]
+        },
         "fill-opacity": {
           "base": 1,
           "stops": [
             [
               13,
-              0.6
+              0
             ],
             [
-              14,
+              15,
               1
             ]
           ]
-        }
+        },
+        "fill-antialias": true
       }
     },
     {
@@ -300,9 +312,7 @@
         ]
       },
       "paint": {
-        "text-color": "hsla(0, 14%, 57%, 0.51)",
-        "text-halo-color": "hsl(39, 41%, 86%)",
-        "text-halo-width": 0.5
+        "text-color": "rgba(212, 177, 146, 1)"
       }
     },
     {
