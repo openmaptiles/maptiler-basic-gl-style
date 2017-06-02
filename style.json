@@ -1153,7 +1153,7 @@
         ]
       ],
       "layout": {
-        "text-field": "{name_en}",
+        "text-field": "{name}",
         "text-font": [
           "Klokantech Noto Sans Regular",
           "Klokantech Noto Sans CJK Regular"
@@ -1201,7 +1201,7 @@
         ]
       ],
       "layout": {
-        "text-field": "{name_en}",
+        "text-field": "{name}",
         "text-font": [
           "Klokantech Noto Sans Regular",
           "Klokantech Noto Sans CJK Regular"
