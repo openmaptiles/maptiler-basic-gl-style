@@ -801,6 +801,82 @@
       }
     },
     {
+      "id": "road_oneway",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 15,
+      "filter": [
+        "all",
+        [
+          "==",
+          "oneway",
+          1
+        ]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "icon-image": "oneway",
+        "symbol-spacing": 200,
+        "icon-padding": 2,
+        "icon-rotation-alignment": "map",
+        "icon-rotate": 0,
+        "icon-size": {
+          "stops": [
+            [
+              15,
+              0.5
+            ],
+            [
+              19,
+              1
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": 0.5
+      }
+    },
+    {
+      "id": "road_oneway_opposite",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 15,
+      "filter": [
+        "all",
+        [
+          "==",
+          "oneway",
+          -1
+        ]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "icon-image": "oneway",
+        "symbol-spacing": 200,
+        "icon-padding": 2,
+        "icon-rotation-alignment": "map",
+        "icon-rotate": 180,
+        "icon-size": {
+          "stops": [
+            [
+              15,
+              0.5
+            ],
+            [
+              19,
+              1
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": 0.5
+      }
+    },
+    {
       "id": "railway-transit",
       "type": "line",
       "source": "openmaptiles",
