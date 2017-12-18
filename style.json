@@ -356,8 +356,7 @@
         "text-field": "{housenumber}",
         "text-size": 10,
         "text-font": [
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "Noto Sans Regular"
         ]
       },
       "paint": {
@@ -1161,8 +1160,7 @@
       "layout": {
         "text-size": 11,
         "text-font": [
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "Noto Sans Regular"
         ],
         "visibility": "visible",
         "text-offset": [
@@ -1198,8 +1196,7 @@
       "layout": {
         "text-size": 11,
         "text-font": [
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "Noto Sans Regular"
         ],
         "visibility": "visible",
         "text-offset": [
@@ -1232,8 +1229,7 @@
         "symbol-placement": "line",
         "text-field": "{name}",
         "text-font": [
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "Noto Sans Regular"
         ],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.1,
@@ -1280,8 +1276,7 @@
       "layout": {
         "text-field": "{name}",
         "text-font": [
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "Noto Sans Regular"
         ],
         "text-max-width": 6,
         "text-size": {
@@ -1328,8 +1323,7 @@
       "layout": {
         "text-field": "{name}",
         "text-font": [
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "Noto Sans Regular"
         ],
         "text-max-width": 10,
         "text-size": {
@@ -1378,8 +1372,7 @@
       "layout": {
         "text-field": "{name}",
         "text-font": [
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "Noto Sans Regular"
         ],
         "text-max-width": 10,
         "text-size": {
@@ -1429,8 +1422,7 @@
       "layout": {
         "text-field": "{name}",
         "text-font": [
-          "Klokantech Noto Sans Bold",
-          "Klokantech Noto Sans CJK Bold"
+          "Noto Sans Bold"
         ],
         "text-max-width": 10,
         "text-size": {
