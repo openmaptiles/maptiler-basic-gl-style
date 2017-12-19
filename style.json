@@ -1268,7 +1268,7 @@
           "Point"
         ],
         [
-          "!=",
+          "!in",
           "class",
           "city",
           "state",
