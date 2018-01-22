@@ -8,13 +8,13 @@ schema of [OpenMapTiles](https://github.com/openmaptiles/openmaptiles).
 
 **[:globe_with_meridians: Browse the map](https://openmaptiles.github.io/klokantech-basic-gl-style)**
 
-<img src="http://demo.tileserver.org/styles/klokantech-basic/static/8.540587,47.370555,15.08/600x400@2x.png" width="600" title="Klokantech Basic Preview Zurich">
+<img src="https://github.com/openmaptiles/klokantech-basic-gl-style/raw/gh-pages/preview/preview-15.png" width="600" title="Preview Zurich">
 
-<img src="http://demo.tileserver.org/styles/klokantech-basic/static/8.619184,47.336203,10.07/600x400@2x.png" width="600" title="Klokantech Basic Preview Lake Zurich">
+<img src="https://github.com/openmaptiles/klokantech-basic-gl-style/raw/gh-pages/preview/preview-10.png" width="600" title="Preview Lake Zurich">
 
-<img src="http://demo.tileserver.org/styles/klokantech-basic/static/8.243967,46.916315,7.21/600x400@2x.png" width="600" title="Klokantech Basic Preview Switzerland">
+<img src="https://github.com/openmaptiles/klokantech-basic-gl-style/raw/gh-pages/preview/preview-7.png" width="600" title="Preview Switzerland">
 
-<img src="http://demo.tileserver.org/styles/klokantech-basic/static/10.987258,46.453150,4.02/600x400@2x.png" width="600" title="Klokantech Basic Preview Europe">
+<img src="https://github.com/openmaptiles/klokantech-basic-gl-style/raw/gh-pages/preview/preview-4.png" width="600" title="Preview Europe">
 
 ## Edit the Style
 
