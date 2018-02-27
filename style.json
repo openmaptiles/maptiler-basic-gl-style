@@ -1372,7 +1372,6 @@
       "source": "openmaptiles",
       "source-layer": "poi",
       "minzoom": 14,
-      "maxzoom": 24,
       "filter": [
         "all",
         [
@@ -1414,7 +1413,6 @@
       "source": "openmaptiles",
       "source-layer": "aerodrome_label",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": [
         "all",
         [
