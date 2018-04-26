@@ -173,6 +173,26 @@
       }
     },
     {
+      "id": "landcover_sand",
+      "type": "fill",
+      "metadata": {},
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "sand"
+        ]
+      ],
+      "paint": {
+        "fill-antialias": false,
+        "fill-color": "rgba(232, 214, 38, 1)",
+        "fill-opacity": 0.3
+      }
+    },
+    {
       "id": "landuse",
       "type": "fill",
       "source": "openmaptiles",
