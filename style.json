@@ -426,6 +426,30 @@
       }
     },
     {
+      "id": "road_bridge_area",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "in",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "hsl(47, 26%, 88%)",
+        "fill-opacity": 0.5
+      }
+    },
+    {
       "id": "road_path",
       "type": "line",
       "source": "openmaptiles",
