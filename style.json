@@ -1387,7 +1387,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "hsl(0, 0, 60%)",
+        "line-color": "hsl(0, 0%, 60%)",
         "line-width": {
           "base": 1.3,
           "stops": [
