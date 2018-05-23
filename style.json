@@ -1357,7 +1357,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 76%)",
+        "line-color": "hsla(0, 0%, 60%, 0.5)",
         "line-dasharray": [
           2,
           1
@@ -1387,7 +1387,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "hsla(0, 8%, 22%, 0.51)",
+        "line-color": "hsl(0, 0, 60%)",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -1562,7 +1562,7 @@
         "text-anchor": "center"
       },
       "paint": {
-        "text-color": "hsl(0, 10%, 25%)",
+        "text-color": "hsl(0, 0%, 25%)",
         "text-halo-color": "hsl(0, 0%, 100%)",
         "text-halo-blur": 0,
         "text-halo-width": 2
