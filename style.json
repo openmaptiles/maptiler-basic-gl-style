@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Klokantech Basic",
+  "name": "Basic",
   "metadata": {
     "mapbox:autocomposite": false,
     "mapbox:type": "template",
@@ -12,11 +12,10 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://free.tilehosting.com/data/v3.json?key={key}"
+      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key={key}"
     }
   },
-  "sprite": "https://openmaptiles.github.io/klokantech-basic-gl-style/sprite",
-  "glyphs": "https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key={key}",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
   "layers": [{
     "id": "background",
     "paint": {
@@ -25,7 +24,7 @@
     "type": "background"
   }, {
     "filter": ["all", ["==", "$type", "Polygon"],
-      ["==", "class", "residential"]
+      ["in", "class", "residential", "suburb", "neighbourhood"]
     ],
     "id": "landuse-residential",
     "layout": {
@@ -65,14 +64,34 @@
     "source-layer": "landcover",
     "type": "fill"
   }, {
-    "filter": ["==", "$type", "Polygon"],
+    "filter": ["all", ["==", "$type", "Polygon"],
+      ["!=", "intermittent", 1]
+    ],
     "id": "water",
     "paint": {
       "fill-color": "hsl(205, 56%, 73%)"
     },
     "source": "openmaptiles",
     "source-layer": "water",
-    "type": "fill"
+    "type": "fill",
+    "layout": {
+      "visibility": "visible"
+    }
+  }, {
+    "filter": ["all", ["==", "$type", "Polygon"],
+      ["==", "intermittent", 1]
+    ],
+    "id": "water_intermittent",
+    "paint": {
+      "fill-color": "hsl(205, 56%, 73%)",
+      "fill-opacity": 0.7
+    },
+    "source": "openmaptiles",
+    "source-layer": "water",
+    "type": "fill",
+    "layout": {
+      "visibility": "visible"
+    }
   }, {
     "filter": ["==", "subclass", "ice_shelf"],
     "id": "landcover-ice-shelf",
@@ -170,10 +189,14 @@
     },
     "source": "openmaptiles",
     "source-layer": "waterway",
-    "type": "line"
+    "type": "line",
+    "layout": {
+      "visibility": "visible"
+    }
   }, {
     "filter": ["all", ["==", "$type", "LineString"],
-      ["!in", "brunnel", "tunnel", "bridge"]
+      ["!in", "brunnel", "tunnel", "bridge"],
+      ["!=", "intermittent", 1]
     ],
     "id": "waterway",
     "paint": {
@@ -189,7 +212,34 @@
     },
     "source": "openmaptiles",
     "source-layer": "waterway",
-    "type": "line"
+    "type": "line",
+    "layout": {
+      "visibility": "visible"
+    }
+  }, {
+    "filter": ["all", ["==", "$type", "LineString"],
+      ["!in", "brunnel", "tunnel", "bridge"],
+      ["==", "intermittent", 1]
+    ],
+    "id": "waterway_intermittent",
+    "paint": {
+      "line-color": "hsl(205, 56%, 73%)",
+      "line-opacity": 1,
+      "line-width": {
+        "base": 1.4,
+        "stops": [
+          [8, 1],
+          [20, 8]
+        ]
+      },
+      "line-dasharray": [2, 1]
+    },
+    "source": "openmaptiles",
+    "source-layer": "waterway",
+    "type": "line",
+    "layout": {
+      "visibility": "visible"
+    }
   }, {
     "filter": ["all", ["==", "$type", "LineString"],
       ["==", "brunnel", "tunnel"],
@@ -546,30 +596,6 @@
     "source": "openmaptiles",
     "source-layer": "transportation",
     "type": "line"
-  }, {
-    "filter": ["all", ["==", "oneway", -1]],
-    "id": "road_oneway_opposite",
-    "layout": {
-      "icon-image": "oneway",
-      "icon-padding": 2,
-      "icon-rotate": 180,
-      "icon-rotation-alignment": "map",
-      "icon-size": {
-        "stops": [
-          [15, 0.5],
-          [19, 1]
-        ]
-      },
-      "symbol-placement": "line",
-      "symbol-spacing": 200
-    },
-    "minzoom": 15,
-    "paint": {
-      "icon-opacity": 0.5
-    },
-    "source": "openmaptiles",
-    "source-layer": "transportation",
-    "type": "symbol"
   }, {
     "filter": ["all", ["==", "class", "transit"],
       ["!=", "brunnel", "tunnel"]
@@ -987,5 +1013,5 @@
     "source-layer": "place",
     "type": "symbol"
   }],
-  "id": "klokantech-basic"
+  "id": "basic"
 }
