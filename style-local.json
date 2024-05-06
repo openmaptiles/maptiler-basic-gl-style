@@ -15,6 +15,7 @@
       "url": "mbtiles://{v3}"
     }
   },
+  "sprite": "{styleJsonFolder}/sprite",
   "glyphs": "{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -1834,6 +1835,5 @@
         "text-halo-width": 2
       }
     }
-  ],
-  "sprite": "{styleJsonFolder}/sprite"
+  ]
 }

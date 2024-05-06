@@ -15,6 +15,7 @@
       "url": "mapbox://openmaptiles.4qljc88t"
     }
   },
+  "sprite": "mapbox://sprites/openmaptiles/basic",
   "glyphs": "mapbox://fonts/openmaptiles/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -1836,6 +1837,5 @@
     }
   ],
   "id": "basic",
-  "owner": "openmaptiles",
-  "sprite": "mapbox://sprites/openmaptiles/basic"
+  "owner": "openmaptiles"
 }
