@@ -8,7 +8,7 @@ A simple GL JS basemap style showcasing OpenStreetMap data. It is using the vect
 
 ## Use this map in your website
 
-```js
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
